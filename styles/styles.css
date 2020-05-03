@@ -7,8 +7,11 @@
   clear: both;
 }
 .header {
+  display: block;
+}
+.header-inner-container {
+  margin: 0 auto;
   width: 1110px;
-  text-align: center;
 }
 
 .logo {
@@ -20,14 +23,14 @@
   font-weight: 300;
   text-transform: uppercase;
   color: rgb(85, 82, 82);
-  padding: 29px;
+  padding: 29px 29px 29px 0;
 }
 .logo::first-letter {
   font-weight: 900;
   color: rgb(26, 188, 156);
 }
 .navigation {
-  padding: 36px 20px;
+  padding: 36px 0;
   float: right;
 }
 .nav {
@@ -79,6 +82,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+  text-align: center;
 }
 
 .button {
@@ -94,9 +98,11 @@
 
 .button-right {
   background-image: url(../images/right.png);
+  float: right;
 }
 .button-left {
   background-image: url(../images/left.png);
+  float: left;
 }
 
 .button:hover {
@@ -107,7 +113,9 @@
 }
 .slider-filling {
   display: inline-block;
-  margin: 0 68px;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: -15px;
 }
 .slider-heading {
   margin: 0px;
@@ -116,6 +124,7 @@
   font-weight: 700;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
+  margin-bottom: 15px;
 }
 .paragraph {
   margin: 0px;
